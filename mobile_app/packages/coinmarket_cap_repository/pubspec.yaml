@@ -1,0 +1,12 @@
+name: coinmarket_cap_repository
+description: a repository to send request to coinmarketcap
+version: 1.0.0+1
+publish_to: 'none'
+environment:
+  sdk: ^3.5.1
+dependencies:
+  base_repository:
+    path: ../base_repository/
+  network_repository:
+    path: ../network_repository/
+  

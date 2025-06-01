@@ -1,0 +1,12 @@
+name: file_repository
+description: a package to do upload files .
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: ^3.5.1
+dependencies:
+  base_repository:
+    path: ../base_repository/
+  network_repository:
+    path: ../network_repository/
+  http: ^1.2.2

@@ -1,0 +1,4 @@
+enum CoinType {
+  ton,
+  stars,
+}

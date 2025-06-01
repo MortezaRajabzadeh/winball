@@ -1,0 +1,13 @@
+name: activity_repository
+description: a package to crud on activities
+publish_to: none
+environment:
+  sdk: ^3.5.1
+dependencies:
+  base_repository:
+    path: ../base_repository/
+  network_repository:
+    path: ../network_repository/
+  user_repository:
+    path: ../user_repository/
+  

@@ -1,0 +1,1 @@
+UPDATE withdraws SET status = 'failed' WHERE status = 'faild'; 

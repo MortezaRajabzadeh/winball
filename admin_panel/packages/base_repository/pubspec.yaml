@@ -1,0 +1,7 @@
+name: base_repository
+description: a package to to CRUD on base_repository
+publish_to: none
+environment:
+  sdk: ^3.5.1
+dependencies:
+  http: ^1.2.2

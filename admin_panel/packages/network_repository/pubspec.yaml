@@ -1,0 +1,6 @@
+name: network_repository
+description: a package to do crud on networks
+environment:
+  sdk: ^3.5.1
+dependencies:
+  http: ^1.2.2

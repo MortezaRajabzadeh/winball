@@ -1,0 +1,9 @@
+name: database_repository_functions
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: ^3.5.1
+dependencies:
+  base_repository:
+    path: ../base_repository/
+  hive: ^2.2.3
