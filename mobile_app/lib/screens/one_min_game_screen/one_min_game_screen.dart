@@ -63,18 +63,7 @@ class _OneMinGameScreenState extends State<OneMinGameScreen> {
 
   void changeOneLastOneMinGameValueNotifier(
       {required OneMinGameModel oneMinGameModel}) {
-    if (!mounted) return;
-    
-    if (oneMinGameModel.gameResult == null && 
-        oneLastOneMinGameModelValueNotifier.value.gameResult != null &&
-        !isSpinningAnimation) {
-      return;
-    }
-    
-    debugPrint('Updating game result: Result: ${oneMinGameModel.gameResult?.name}');
-    
     oneLastOneMinGameModelValueNotifier.value = oneMinGameModel;
-    
     if (oneMinGameModel.gameResult != null &&
         listWheelScrollController.hasClients &&
         oneMinGameModel.gameType == widget.gameType) {
@@ -203,51 +192,27 @@ class _OneMinGameScreenState extends State<OneMinGameScreen> {
     }
   }
 
-  void makeRandomSpinOfSpinnerGameResult({required OneMinGameModel tempOneMinGameModel}) {
-    if (isSpinningAnimation) return;
-    
-    // نمایش اطلاعات انیمیشن برای اشکال‌زدایی
-    debugPrint('Starting spin animation with FINAL result: ${tempOneMinGameModel.gameResult?.name}');
-    isSpinningAnimation = true;
-    
-    // ایجاد انیمیشن چرخش با نمایش نتایج تصادفی
+  void makeRandomSpinOfSpinnerGameResult(
+      {required OneMinGameModel tempOneMinGameModel}) {
     for (int i = 1; i <= 33; i++) {
       Future.delayed(Duration(milliseconds: i * 100)).then(
         (_) {
           Future.delayed(
             const Duration(milliseconds: 900),
             () {
-              if (mounted) {
-                // نمایش نتایج مختلف به صورت تصادفی در طول انیمیشن
-                final OneMinGameModel oneMinGameModel =
-                    tempOneMinGameModel.copyWith(
-                  gameResult: OneMinGameResult.values
-                      .toList()[i % OneMinGameResult.values.length],
-                );
-                changeOneLastOneMinGameValueNotifier(
-                  oneMinGameModel: oneMinGameModel,
-                );
-              }
+              final OneMinGameModel oneMinGameModel =
+                  tempOneMinGameModel.copyWith(
+                gameResult: OneMinGameResult.values
+                    .toList()[i % OneMinGameResult.values.length],
+              );
+              changeOneLastOneMinGameValueNotifier(
+                oneMinGameModel: oneMinGameModel,
+              );
             },
           );
         },
       );
     }
-    
-    // در پایان انیمیشن، نتیجه نهایی واقعی را نمایش می‌دهیم
-    Future.delayed(
-      const Duration(milliseconds: 4500),
-      () {
-        if (mounted) {
-          isSpinningAnimation = false;
-          // نمایش نتیجه نهایی که از وب‌سوکت دریافت شده است
-          changeOneLastOneMinGameValueNotifier(
-            oneMinGameModel: tempOneMinGameModel,
-          );
-          debugPrint('Finished spin animation with FINAL result: ${tempOneMinGameModel.gameResult?.name}');
-        }
-      },
-    );
   }
 
   void initializeWebsocketListener({required AppBloc appBloc}) {
@@ -317,10 +282,12 @@ class _OneMinGameScreenState extends State<OneMinGameScreen> {
           // here is to rotate all of the possibilities
           final int oneMinGameResultIndex = OneMinGameResult.values.indexWhere(
               (result) => result == websocketServerModel.oneMinGame.gameResult);
-          if (oneMinGameResultIndex != -1 && !isSpinningAnimation) {
+          if (oneMinGameResultIndex != -1) {
             final OneMinGameModel tempOneMinGameModel =
                 websocketServerModel.oneMinGame.copyWith(
-              gameResult: websocketServerModel.oneMinGame.gameResult,
+              gameResult: OneMinGameResult.values.elementAt(
+                OneMinGameResult.values.length - 1 - oneMinGameResultIndex,
+              ),
             );
             makeRandomSpinOfSpinnerGameResult(
               tempOneMinGameModel: tempOneMinGameModel,
@@ -333,14 +300,11 @@ class _OneMinGameScreenState extends State<OneMinGameScreen> {
             websocketServerModel: websocketServerModel,
           );
           
-          // بهینه‌سازی timer management
-          final int newSeconds = websocketServerModel.seconds == 0
-              ? oneMinGameFunctions.getSecondsByGameType(gameType: widget.gameType)
-              : websocketServerModel.seconds;
-          
-          changeCurrentGameTimerValueNotifier(seconds: newSeconds);
-          
-          // لغو timer قبلی و شروع timer جدید
+          changeCurrentGameTimerValueNotifier(
+              seconds: websocketServerModel.seconds == 0
+                  ? oneMinGameFunctions.getSecondsByGameType(
+                      gameType: widget.gameType)
+                  : websocketServerModel.seconds);
           gameSecondsTimer?.cancel();
           gameSecondsTimer = Timer.periodic(
             const Duration(seconds: 1),
@@ -376,7 +340,7 @@ class _OneMinGameScreenState extends State<OneMinGameScreen> {
     if (websocketChannel?.closeCode != null) {
       websocketChannel?.sink.close();
       Future.delayed(
-        const Duration(seconds: 7),
+        const Duration(seconds: 3),
         () {
           if (mounted) {
             initializeBaseGame(appBloc: context.readAppBloc);

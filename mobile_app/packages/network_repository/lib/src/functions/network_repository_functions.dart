@@ -59,5 +59,4 @@ class NetworkRepositoryFunctions {
     } catch (e) {
       rethrow;
     }
-  }
-}
+  }}

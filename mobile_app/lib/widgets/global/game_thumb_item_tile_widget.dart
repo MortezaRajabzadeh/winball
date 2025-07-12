@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_min_game_repository/one_min_game_repository.dart';
+import 'package:red_black_game_repository/red_black_game_repository.dart';
 import 'package:winball/configs/configs.dart';
 import 'package:winball/extensions/extensions.dart';
 import 'package:winball/screens/screens.dart';
@@ -20,43 +21,81 @@ class GameThumbItemTileWidget extends StatelessWidget {
     // استاندارد کردن اندازه آیکون بر اساس اندازه صفحه
     final double screenWidth = MediaQuery.of(context).size.width;
     final bool isTablet = screenWidth > 600;
-    final double iconSize = isTablet ? 120.0 : 80.0; // اندازه استاندارد آیکون
+    final double iconSize = isTablet ? 120.0 : 75.0; // اندازه استاندارد آیکون
     
     return Container(
       margin: const EdgeInsets.all(8.0),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: () {
-          context.to(
-            child: OneMinGameScreen(
-              gameType: gameType,
-            ),
-          );
+          // منطق شرطی برای هدایت به صفحه مناسب
+          if (_isRedBlackGame(gameType)) {
+            context.to(
+              child: RedBlackGameScreen(
+                gameType: _convertToRedBlackGameType(gameType),
+              ),
+            );
+          } else {
+            context.to(
+              child: OneMinGameScreen(
+                gameType: gameType,
+              ),
+            );
+          }
         },
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             // 1. کانتینر آیکون با سایز استاندارد و افکت سایه
-            Container(
-              width: iconSize,
-              height: iconSize,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    blurRadius: 8,
-                    offset: const Offset(0, 4),
+            Stack(
+              children: [
+                Container(
+                  width: iconSize,
+                  height: iconSize,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  imagePath,
-                  fit: BoxFit.cover,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image.asset(
+                      imagePath,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
-              ),
+                // بج زمان روی تصویر مشابه ردیف بالا
+                Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 6),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[800],
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(8),
+                        bottomRight: Radius.circular(12),
+                      ),
+                    ),
+                    child: Text(
+                      const OneMinGameFunctions().convertGameTypeMinutes(
+                        gameType: gameType,
+                      ),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 12.0,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
             
             const SizedBox(height: 8), // فاصله استاندارد بین آیکون و متن
@@ -69,7 +108,7 @@ class GameThumbItemTileWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(
-                AppTexts.redAndGreenGameText,
+                gameName, // استفاده از نام بازی گرفته شده از پراپس
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
@@ -80,37 +119,28 @@ class GameThumbItemTileWidget extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            
-            const SizedBox(height: 4), // فاصله کم بین دو متن
-            
-            // 3. زمان بازی با استایل جذاب‌تر
-            Container(
-              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    AppConfigs.yellowColor.withOpacity(0.8),
-                    AppConfigs.yellowColor.withOpacity(0.6),
-                  ],
-                ),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Text(
-                const OneMinGameFunctions().convertGameTypeMinutes(
-                  gameType: gameType,
-                ),
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: isTablet ? 13.0 : 11.0,
-                ),
-              ),
-            ),
           ],
         ),
       ),
     );
+  }
+  
+  // تشخیص اینکه آیا بازی از نوع Red-Black است
+  bool _isRedBlackGame(GameType gameType) {
+    return gameType.name.contains('red_black');
+  }
+  
+  // تبدیل GameType به RedBlackGameType
+  RedBlackGameType _convertToRedBlackGameType(GameType gameType) {
+    switch (gameType.name) {
+      case 'red_black_30s':
+        return RedBlackGameType.red_black_30s;
+      case 'red_black_1min':
+        return RedBlackGameType.red_black_1min;
+      case 'red_black_3min':
+        return RedBlackGameType.red_black_3min;
+      default:
+        return RedBlackGameType.red_black_1min; // پیش‌فرض
+    }
   }
 }

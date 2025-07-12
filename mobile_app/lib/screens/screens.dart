@@ -17,3 +17,4 @@ export './list_of_games_screen/list_of_games_screen.dart';
 export './search_screen/search_screen.dart';
 export './withdraw_screen/withdraw_screen.dart';
 export './service_screen/service_screen.dart';
+export './red_black_game_screen/red_black_game_screen.dart';

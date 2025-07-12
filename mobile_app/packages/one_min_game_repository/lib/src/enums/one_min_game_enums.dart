@@ -31,4 +31,7 @@ enum GameType {
   one_min_game,
   three_min_game,
   five_min_game,
+  red_black_30s,
+  red_black_1min,
+  red_black_3min,
 }

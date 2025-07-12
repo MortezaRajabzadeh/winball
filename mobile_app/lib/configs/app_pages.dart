@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart' show Widget;
+import 'package:red_black_game_repository/red_black_game_repository.dart';
 import 'package:winball/screens/screens.dart';
 
 abstract class AppPages {
@@ -19,6 +20,8 @@ abstract class AppPages {
   static const String depositScreen = '/deposit-screen';
   static const String gameRecordsScreen = '/game-records-screen';
   static const String searchScreen = '/search-screen';
+  static const String redBlackGameScreen = '/red-black-game-screen';
+  
   static const Map<String, Widget> mapOfAppScreens = {
     authenticationControllerScreen: AuthenticationControllerScreen(),
     homeScreen: HomeScreen(),
@@ -36,5 +39,6 @@ abstract class AppPages {
     searchScreen: SearchScreen(),
     withdrawScreen: WithdrawScreen(),
     serviceScreen: ServiceScreen(),
+    redBlackGameScreen: RedBlackGameScreen(gameType: RedBlackGameType.red_black_1min), // default
   };
 }

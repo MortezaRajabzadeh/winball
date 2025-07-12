@@ -15,6 +15,12 @@ class ListOfGamesScreen extends StatelessWidget {
         return AppConfigs.threeMinGameImage;
       case GameType.five_min_game:
         return AppConfigs.fiveMinGameImage;
+      case GameType.red_black_30s:
+        return AppConfigs.redBlack30sImage;
+      case GameType.red_black_1min:
+        return AppConfigs.redBlack1MinImage;
+      case GameType.red_black_3min:
+        return AppConfigs.redBlack3MinImage;
       default:
         return AppConfigs.oneMinGameImage;
     }
@@ -27,32 +33,31 @@ class ListOfGamesScreen extends StatelessWidget {
         title: const Text(AppTexts.games),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: AppConfigs.largeVisualDensity,
-          horizontal: AppConfigs.mediumVisualDensity,
-        ),
+        padding: const EdgeInsets.all(16), // استاندارد Material Design برای حاشیه‌ها
         child: DecoratedBox(
           decoration: BoxDecoration(
             color: AppConfigs.appShadowColor,
-            borderRadius: BorderRadius.circular(
-              AppConfigs.mediumVisualDensity,
-            ),
+            borderRadius: BorderRadius.circular(16), // استاندارد Material Design برای گرد‌کردن گوشه‌ها
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(
-              vertical: AppConfigs.mediumVisualDensity,
-              horizontal: AppConfigs.largeVisualDensity,
-            ),
+            padding: const EdgeInsets.all(16), // پدینگ داخلی استاندارد
             child: GridView.builder(
+              padding: const EdgeInsets.symmetric(vertical: 8),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
+                mainAxisSpacing: 16, // فاصله استاندارد بین ردیف‌ها
+                crossAxisSpacing: 16, // فاصله استاندارد بین ستون‌ها
+                childAspectRatio: 0.85, // نسبت عرض به ارتفاع بهینه برای نمایش آیکون و متن
               ),
               itemCount: AppConfigs.listOfGames.length,
               itemBuilder: (context, index) {
                 final GameType gameType = AppConfigs.listOfGames.values.elementAt(index);
+                final String gameName = AppConfigs.listOfGames.entries
+                  .firstWhere((entry) => entry.value == gameType)
+                  .key;
                 return GameThumbItemTileWidget(
                   gameType: gameType,
-                  gameName: AppTexts.oneMinGame,
+                  gameName: gameName,
                   imagePath: getGameImage(gameType),
                 );
               },

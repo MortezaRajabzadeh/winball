@@ -52,6 +52,8 @@ dependencies:
     path: packages/network_repository/
   one_min_game_repository:
     path: packages/one_min_game_repository/
+  red_black_game_repository:
+    path: packages/red_black_game_repository/
   site_settings_repository:
     path: packages/site_settings_repository/
   support_repository:
@@ -67,14 +69,16 @@ dependencies:
   slider_repository:
     path: packages/slider_repository/
   web_socket_channel: ^3.0.1
+  flutter_carousel_widget: ^3.1.0
   database_repository_functions:
     path: packages/database_repository_functions/
   coinmarket_cap_repository:
     path: packages/coinmarket_cap_repository/
   url_launcher: ^6.3.1
   qr_flutter: ^4.1.0
-  cached_network_image: ^3.3.1
-  flutter_carousel_widget: ^3.1.0
+  http: ^1.1.0
+  cached_network_image: ^3.3.0
+  path_provider: ^2.1.1
   json_annotation: ^4.9.0
   # پکیج‌های مورد نیاز برای وب
   connectivity_plus: ^5.0.2
@@ -83,6 +87,8 @@ dependencies:
   firebase_performance: ^0.9.3+16
   flutter_secure_storage: ^9.0.0
   share_plus: ^7.2.2
+  shared_preferences: ^2.5.3
+  easy_localization: ^3.0.7+1
 
 dev_dependencies:
   flutter_test:
@@ -111,6 +117,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/slider/
     - assets/js/
     - assets/images/splash_placeholder.png
   # assets:
