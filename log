@@ -1,0 +1,3442 @@
+
+Target dart2js failed: ProcessException: Process exited abnormally with exit code 1:
+lib/bloc/app_bloc/app_event.dart:3428:30:
+Error: Can't find '}' to match '{'.
+  const GetStarsPaymentEvent({
+                             ^
+lib/bloc/app_bloc/app_event.dart:3428:29:
+Error: Can't find ')' to match '('.
+  const GetStarsPaymentEvent({
+                            ^
+lib/bloc/app_bloc/app_event.dart:3426:45:
+Error: Can't find '}' to match '{'.
+class GetStarsPaymentEvent extends AppEvent {
+                                            ^
+lib/bloc/app_bloc/app_event.dart:3430:1:
+Error: Expected '{' before this.
+
+lib/bloc/app_bloc/app_event.dart:3428:3:
+Error: A const constructor can't have a body.
+  const GetStarsPaymentEvent({
+  ^^^^^
+packages/red_black_game_repository/lib/src/configs/red_black_game_configs.dart:18:3:
+Error: Can't have modifier 'static' here.
+  static const String getRedBlackGameWithId =
+  ^^^^^^
+packages/red_black_game_repository/lib/src/configs/red_black_game_configs.dart:20:3:
+Error: Can't have modifier 'static' here.
+  static const String gameWebsocketUrl =
+  ^^^^^^
+packages/red_black_game_repository/lib/src/configs/red_black_game_configs.dart:22:3:
+Error: Can't have modifier 'static' here.
+  static const String getOldRedBlackGamesPerPage =
+  ^^^^^^
+packages/red_black_game_repository/lib/src/configs/red_black_game_configs.dart:24:3:
+Error: Can't have modifier 'static' here.
+  static const String getOldRedBlackGamesByGameTypePerPage =
+  ^^^^^^
+packages/red_black_game_repository/lib/src/configs/red_black_game_configs.dart:26:1:
+Error: Expected a declaration, but got '}'.
+}
+^
+lib/bloc/app_bloc/app_event.dart:98:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:114:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:130:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:146:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:162:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:178:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:194:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:210:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:226:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:242:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:258:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:274:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:290:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:306:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:322:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:338:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:354:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:370:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:386:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:402:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:418:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:434:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:450:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:466:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:482:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:498:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:514:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:530:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:546:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:562:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:578:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:594:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:610:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:626:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:642:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:658:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:674:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:690:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:706:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:722:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:738:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:754:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:770:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:786:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:802:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:818:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:834:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:850:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:866:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:882:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:898:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:914:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:930:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:946:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:962:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:978:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:994:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1010:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1026:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1042:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1058:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1074:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1090:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1106:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1122:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1138:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1154:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1170:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1186:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1202:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1218:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1234:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1250:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1266:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1282:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1298:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1314:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1330:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1346:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1362:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1378:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1394:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1410:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1426:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1442:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1458:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1474:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1490:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1506:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1522:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1538:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1554:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1570:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1586:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1602:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1618:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1634:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1650:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1666:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1682:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1698:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1714:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1730:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1746:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1762:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1778:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1794:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1810:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1826:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1842:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1858:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1874:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1890:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1906:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1922:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1938:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1954:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1970:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1986:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2002:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2018:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2034:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2050:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2066:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2082:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2098:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2114:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2130:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2146:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2162:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2178:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2194:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2210:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2226:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2242:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2258:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2274:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2290:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2306:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2322:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2338:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2354:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2370:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2386:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2402:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2418:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2434:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2450:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2466:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2482:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2498:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2514:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2530:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2546:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2562:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2578:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2594:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2610:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2626:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2642:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2658:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2674:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2690:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2706:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2722:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2738:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2754:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2770:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2786:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2802:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2818:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2834:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2850:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2866:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2882:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2898:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2914:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2930:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2946:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2962:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2978:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2994:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3010:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3026:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3042:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3058:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3074:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3090:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3106:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3122:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3138:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3154:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3170:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3186:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3202:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3218:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3234:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3250:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3266:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3282:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3298:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3314:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3330:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3346:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3362:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3378:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3394:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3410:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3426:7:
+Error: 'GetStarsPaymentEvent' is already declared in this scope.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:83:7:
+Info: Previous declaration of 'GetStarsPaymentEvent'.
+class GetStarsPaymentEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:105:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:121:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:137:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:153:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:169:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:185:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:201:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:217:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:233:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:249:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:265:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:281:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:297:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:313:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:329:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:345:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:361:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:377:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:393:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:409:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:425:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:441:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:457:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:473:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:489:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:505:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:521:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:537:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:553:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:569:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:585:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:601:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:617:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:633:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:649:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:665:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:681:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:697:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:713:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:729:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:745:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:761:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:777:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:793:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:809:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:825:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:841:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:857:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:873:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:889:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:905:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:921:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:937:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:953:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:969:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:985:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1001:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1017:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1033:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1049:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1065:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1081:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1097:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1113:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1129:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1145:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1161:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1177:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1193:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1209:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1225:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1241:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1257:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1273:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1289:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1305:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1321:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1337:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1353:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1369:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1385:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1401:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1417:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1433:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1449:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1465:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1481:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1497:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1513:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1529:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1545:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1561:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1577:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1593:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1609:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1625:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1641:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1657:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1673:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1689:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1705:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1721:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1737:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1753:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1769:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1785:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1801:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1817:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1833:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1849:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1865:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1881:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1897:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1913:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1929:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1945:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1961:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1977:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:1993:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2009:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2025:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2041:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2057:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2073:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2089:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2105:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2121:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2137:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2153:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2169:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2185:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2201:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2217:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2233:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2249:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2265:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2281:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2297:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2313:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2329:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2345:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2361:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2377:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2393:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2409:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2425:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2441:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2457:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2473:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2489:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2505:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2521:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2537:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2553:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2569:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2585:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2601:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2617:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2633:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2649:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2665:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2681:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2697:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2713:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2729:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2745:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2761:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2777:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2793:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2809:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2825:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2841:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2857:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2873:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2889:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2905:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2921:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2937:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2953:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2969:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:2985:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3001:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3017:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3033:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3049:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3065:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3081:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3097:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3113:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3129:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3145:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3161:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3177:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3193:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3209:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3225:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3241:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3257:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3273:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3289:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3305:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3321:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3337:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3353:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3369:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3385:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3401:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:3417:7:
+Error: 'CreateInvitationEvent' is already declared in this scope.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:89:7:
+Info: Previous declaration of 'CreateInvitationEvent'.
+class CreateInvitationEvent extends AppEvent {
+      ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:61:5:
+Error: 'CreateInvitationEvent' isn't a type.
+    CreateInvitationEvent event,
+    ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:61:5:
+Info: This isn't a type.
+    CreateInvitationEvent event,
+    ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:75:7:
+Error: 'GetStarsPaymentEvent' isn't a type.
+      GetStarsPaymentEvent event, Emitter<AppState> emit) async {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:75:7:
+Info: This isn't a type.
+      GetStarsPaymentEvent event, Emitter<AppState> emit) async {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_event.dart:85:19:
+Error: 'amount' isn't an instance field of this class.
+    required this.amount,
+                  ^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:48:8:
+Error: Can't use 'GetStarsPaymentEvent' because it is declared more than once.
+    on<GetStarsPaymentEvent>(_onGetStarsPaymentEvent);
+       ^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:49:8:
+Error: Can't use 'CreateInvitationEvent' because it is declared more than once.
+    on<CreateInvitationEvent>(_onCreateInvitationEvent);
+       ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:61:5:
+Error: Can't use 'CreateInvitationEvent' because it is declared more than once.
+    CreateInvitationEvent event,
+    ^^^^^^^^^^^^^^^^^^^^^
+lib/bloc/app_bloc/app_bloc.dart:75:7:
+Error: Can't use 'GetStarsPaymentEvent' because it is declared more than once.
+      GetStarsPaymentEvent event, Emitter<AppState> emit) async {
+      ^^^^^^^^^^^^^^^^^^^^
+lib/screens/red_black_game_screen/red_black_game_screen.dart:589:40:
+Error: Member not found: 'gameWebsocketUrl'.
+      Uri.parse('${RedBlackGameConfigs.gameWebsocketUrl}?token=$token&game_type=${widget.gameType.name}'),
+                                       ^^^^^^^^^^^^^^^^
+lib/widgets/game_screen/list_of_red_black_game_primary_color_widget.dart:32:29:
+Error: Member not found: 'white'.
+            title: AppTexts.white,
+                            ^^^^^
+lib/widgets/game_screen/list_of_red_black_game_primary_color_widget.dart:42:29:
+Error: Member not found: 'black'.
+            title: AppTexts.black,
+                            ^^^^^
+lib/bloc/app_bloc/app_event.dart:3427:16:
+Error: Final field 'amount' is not initialized.
+  final String amount;
+               ^^^^^^
+Error: Compilation failed.
+  Command: C:\Users\User\dev\flutter\bin\cache\dart-sdk\bin\dart.exe compile js
+  --platform-binaries=C:\Users\User\dev\flutter\bin\cache\flutter_web_sdk\kernel --invoker=flutter_tool
+  -Ddart.vm.product=true -DFLUTTER_VERSION=3.32.6 -DFLUTTER_CHANNEL=stable
+  -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=077b4a4ce1
+  -DFLUTTER_ENGINE_REVISION=72f2b18bb0 -DFLUTTER_DART_VERSION=3.8.1 -DFLUTTER_WEB_USE_SKIA=true
+  -DFLUTTER_WEB_USE_SKWASM=false
+  -DFLUTTER_WEB_CANVASKIT_URL=https://www.gstatic.com/flutter-canvaskit/72f2b18bb094f92f62a3113a8075240ebb59affa/ -o
+  C:\Users\User\Downloads\Telegram
+  Desktop\app\mobile_app\.dart_tool\flutter_build\1a44ce7fd333050500653aed3af0a649\app.dill
+  --packages=C:\Users\User\Downloads\Telegram Desktop\app\mobile_app\.dart_tool\package_config.json --cfe-only
+  C:\Users\User\Downloads\Telegram
+  Desktop\app\mobile_app\.dart_tool\flutter_build\1a44ce7fd333050500653aed3af0a649\main.dart

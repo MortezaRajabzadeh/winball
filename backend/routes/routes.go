@@ -1,11 +1,13 @@
 package routes
 
 import (
+	"bytes"
 	"context"
 	"database/sql"
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"os"
 	"strconv"
@@ -72,6 +74,9 @@ func SetupRoutes(sm *http.ServeMux) {
 	sm.Handle("/get-one-min-game-with-id", middleware.ValidateJWT(getOneMinGameWithId))
 	sm.Handle("/get-old-one-min-games-per-page", middleware.ValidateJWT(getOldOneMinGamesByPage))
 	sm.Handle("/get-old-one-min-games-by-game-type-and-page", middleware.ValidateJWT(getOldOneMinGamesByGameTypeAndPage))
+	// Red Black Game specific endpoints
+	sm.Handle("/get-last-red-black-30s", middleware.ValidateJWT(getLastRedBlack30s))
+	sm.Handle("/get-red-black-game-history", middleware.ValidateJWT(getRedBlackGameHistory))
 	// these are from one_min_game_controller
 	// these are from site_settings_controller
 	sm.Handle("/create-site-setting", middleware.ValidateJWT(createSiteSetting))
@@ -236,6 +241,102 @@ func SetupRoutes(sm *http.ServeMux) {
 				} else {
 					fmt.Println(err.Error())
 				}
+				// red_black 30s
+				lastRB30, err := controllers.GetLastOneMinGame("red_black_30s", db)
+				if err == nil {
+					if lastRB30.Id == 0 {
+						created, err := controllers.CreateOneMinGame("red_black_30s", db)
+						if err == nil {
+							var currentTime = time.Now()
+							diff := currentTime.Sub(created.UpdatedAt)
+							seconds := int(diff.Seconds())
+							var websocketCommand = models.ServerWebsocketCommand{Command: configs.GameCreatedCommand, Value: created, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_30s") - seconds}
+							bytes, _ := json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+						}
+					} else {
+						var currentTime = time.Now()
+						diff := currentTime.Sub(lastRB30.UpdatedAt)
+						seconds := int(diff.Seconds())
+						if seconds > 30 {
+							updated := controllers.SetRandomResultToOneMinGame(lastRB30.GameHash, db)
+							controllers.CalculateUserBetEndGameResult(lastRB30.GameHash, db)
+							var websocketCommand = models.ServerWebsocketCommand{Command: configs.GameUpdatedCommand, Value: updated, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_30s") - seconds}
+							bytes, _ := json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+							created, _ := controllers.CreateOneMinGame("red_black_30s", db)
+							websocketCommand = models.ServerWebsocketCommand{Command: configs.GameCreatedCommand, Value: created, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_30s") - seconds}
+							bytes, _ = json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+						}
+					}
+				} else {
+					fmt.Println(err.Error())
+				}
+				// red_black 3m
+				lastRB3, err := controllers.GetLastOneMinGame("red_black_3m", db)
+				if err == nil {
+					if lastRB3.Id == 0 {
+						created, err := controllers.CreateOneMinGame("red_black_3m", db)
+						if err == nil {
+							var currentTime = time.Now()
+							diff := currentTime.Sub(created.UpdatedAt)
+							seconds := int(diff.Seconds())
+							var websocketCommand = models.ServerWebsocketCommand{Command: configs.GameCreatedCommand, Value: created, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_3m") - seconds}
+							bytes, _ := json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+						}
+					} else {
+						var currentTime = time.Now()
+						diff := currentTime.Sub(lastRB3.UpdatedAt)
+						seconds := int(diff.Seconds())
+						if seconds > 180 {
+							updated := controllers.SetRandomResultToOneMinGame(lastRB3.GameHash, db)
+							controllers.CalculateUserBetEndGameResult(lastRB3.GameHash, db)
+							var websocketCommand = models.ServerWebsocketCommand{Command: configs.GameUpdatedCommand, Value: updated, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_3m") - seconds}
+							bytes, _ := json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+							created, _ := controllers.CreateOneMinGame("red_black_3m", db)
+							websocketCommand = models.ServerWebsocketCommand{Command: configs.GameCreatedCommand, Value: created, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_3m") - seconds}
+							bytes, _ = json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+						}
+					}
+				} else {
+					fmt.Println(err.Error())
+				}
+				// red_black 5m
+				lastRB5, err := controllers.GetLastOneMinGame("red_black_5m", db)
+				if err == nil {
+					if lastRB5.Id == 0 {
+						created, err := controllers.CreateOneMinGame("red_black_5m", db)
+						if err == nil {
+							var currentTime = time.Now()
+							diff := currentTime.Sub(created.UpdatedAt)
+							seconds := int(diff.Seconds())
+							var websocketCommand = models.ServerWebsocketCommand{Command: configs.GameCreatedCommand, Value: created, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_5m") - seconds}
+							bytes, _ := json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+						}
+					} else {
+						var currentTime = time.Now()
+						diff := currentTime.Sub(lastRB5.UpdatedAt)
+						seconds := int(diff.Seconds())
+						if seconds > 300 {
+							updated := controllers.SetRandomResultToOneMinGame(lastRB5.GameHash, db)
+							controllers.CalculateUserBetEndGameResult(lastRB5.GameHash, db)
+							var websocketCommand = models.ServerWebsocketCommand{Command: configs.GameUpdatedCommand, Value: updated, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_5m") - seconds}
+							bytes, _ := json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+							created, _ := controllers.CreateOneMinGame("red_black_5m", db)
+							websocketCommand = models.ServerWebsocketCommand{Command: configs.GameCreatedCommand, Value: created, GameSecondsRemains: utils.GetGameDiffByGameType("red_black_5m") - seconds}
+							bytes, _ = json.Marshal(websocketCommand)
+							chatRoom.BroadcastMessageToUsers(bytes)
+						}
+					}
+				} else {
+					fmt.Println(err.Error())
+				}
 			} else {
 				fmt.Println(err.Error())
 			}
@@ -254,6 +355,64 @@ func getFirstInvitationUsers(w http.ResponseWriter, r *http.Request, user *model
 	default:
 		{
 			http.Error(w, "Method Not Allowed", http.StatusNotAcceptable)
+		}
+	}
+}
+
+// Red Black 30s specific endpoints
+func getLastRedBlack30s(w http.ResponseWriter, r *http.Request, user *models.User) {
+	switch r.Method {
+	case http.MethodGet:
+		{
+			db, _ := database.GetDatabase()
+			game, err := controllers.GetLastOneMinGame("red_black_30s", db)
+			if err == nil {
+				var currentTime = time.Now()
+				diff := currentTime.Sub(game.UpdatedAt)
+				seconds := int(diff.Seconds())
+				response := map[string]interface{}{
+					"game": game,
+					"seconds_remaining": utils.GetGameDiffByGameType("red_black_30s") - seconds,
+				}
+				encoder := json.NewEncoder(w)
+				encoder.Encode(response)
+			} else {
+				utils.HandleErrors(w, err)
+			}
+		}
+	default:
+		{
+			http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
+		}
+	}
+}
+
+func getRedBlackGameHistory(w http.ResponseWriter, r *http.Request, user *models.User) {
+	switch r.Method {
+	case http.MethodGet:
+		{
+			var page = 1
+			var err error
+			pageString := r.URL.Query().Get("page")
+			if pageString != "" {
+				page, err = strconv.Atoi(pageString)
+				if err != nil {
+					page = 1
+				}
+			}
+
+			db, _ := database.GetDatabase()
+			games, err := controllers.GetOldOneMinGamesByGameTypeAndPage("red_black_30s", page, utils.ITEM_PER_PAGE, db)
+			if err == nil {
+				encoder := json.NewEncoder(w)
+				encoder.Encode(games)
+			} else {
+				utils.HandleErrors(w, err)
+			}
+		}
+	default:
+		{
+			http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
 		}
 	}
 }
@@ -330,16 +489,16 @@ func checkTonTransactions(w http.ResponseWriter, r *http.Request, user *models.U
 			words := strings.Split(configs.CasinoWallet, " ")
 			wallet := controllers.GetWalletFromWords(api, wallet.ConfigV5R1Final{NetworkGlobalID: wallet.MainnetGlobalID}, words, ctx)
 			block := controllers.GetBlockFromApi(api, ctx)
-			
+
 			// فقط چک کردن تراکنش‌های این کاربر خاص
 			found := controllers.CheckUserSpecificTransactions(api, wallet, block, db, ctx, user.UserUniqueNumber)
-			
+
 			response := map[string]interface{}{
 				"success": true,
 				"message": "Transaction check completed",
 				"found_new_transactions": found,
 			}
-			
+
 			w.Header().Set("Content-Type", "application/json")
 			json.NewEncoder(w).Encode(response)
 		}
@@ -1447,7 +1606,7 @@ func getOldOneMinGamesByPage(w http.ResponseWriter, r *http.Request, user *model
 				}
 			}
 			db, _ := database.GetDatabase()
-			oneMinGames, err := controllers.GetOldOneMinGamesByPage(page, db)
+			oneMinGames, err := controllers.GetOldOneMinGamesByPage(page, utils.ITEM_PER_PAGE, db)
 			if err == nil {
 				encoder := json.NewEncoder(w)
 				encoder.Encode(oneMinGames)
@@ -1481,7 +1640,7 @@ func getOldOneMinGamesByGameTypeAndPage(w http.ResponseWriter, r *http.Request, 
 				return
 			}
 			db, _ := database.GetDatabase()
-			oneMinGames, err := controllers.GetOldOneMinGamesByGameTypeAndPage(gameType, page, db)
+			oneMinGames, err := controllers.GetOldOneMinGamesByGameTypeAndPage(gameType, page, utils.ITEM_PER_PAGE, db)
 			if err == nil {
 				encoder := json.NewEncoder(w)
 				encoder.Encode(oneMinGames)
@@ -2208,76 +2367,177 @@ func getWithdrawByTransactionId(w http.ResponseWriter, r *http.Request, user *mo
 	}
 }
 func createSlider(w http.ResponseWriter, r *http.Request, user *models.User) {
+	start := time.Now()
+	log.Printf("🆕 درخواست ایجاد اسلایدر جدید از کاربر: %s (ID: %d)", user.Username, user.Id)
+
 	switch r.Method {
 	case http.MethodPost:
 		{
+			// Log request body
+			bodyBytes, _ := io.ReadAll(r.Body)
+			log.Printf("📥 بدنه درخواست: %s", string(bodyBytes))
+
+			// Restore the request body for JSON unmarshalling
+		r.Body = io.NopCloser(bytes.NewBuffer(bodyBytes))
+
 			var jsonOfInputs map[string]any
-			bytes, _ := io.ReadAll(r.Body)
-			json.Unmarshal(bytes, &jsonOfInputs)
-			if jsonOfInputs["image_path"] == nil {
-				http.Error(w, "image_path is required field", http.StatusNotAcceptable)
+			if err := json.Unmarshal(bodyBytes, &jsonOfInputs); err != nil {
+				log.Printf("❌ خطا در تجزیه JSON درخواست: %v", err)
+				http.Error(w, "Invalid JSON format", http.StatusBadRequest)
+				return
 			}
-			db, _ := database.GetDatabase()
-			slider, err := controllers.CreateSlider(utils.ConvertAnyToString(jsonOfInputs["image_path"]), jsonOfInputs["button_title"], jsonOfInputs["button_link"], db)
-			if err == nil {
-				encoder := json.NewEncoder(w)
-				encoder.Encode(slider)
-			} else {
+
+			// Validate required fields
+			if jsonOfInputs["image_path"] == nil {
+				errMsg := "image_path is a required field"
+				log.Printf("❌ %s", errMsg)
+				http.Error(w, errMsg, http.StatusNotAcceptable)
+				return
+			}
+
+			log.Printf("🔧 پارامترهای دریافتی - image_path: %v, button_title: %v, button_link: %v",
+				jsonOfInputs["image_path"], jsonOfInputs["button_title"], jsonOfInputs["button_link"])
+
+			db, err := database.GetDatabase()
+			if err != nil {
+				log.Printf("❌ خطا در اتصال به دیتابیس: %v", err)
+				http.Error(w, "Database connection error", http.StatusInternalServerError)
+				return
+			}
+
+			slider, err := controllers.CreateSlider(
+				utils.ConvertAnyToString(jsonOfInputs["image_path"]),
+				jsonOfInputs["button_title"],
+				jsonOfInputs["button_link"],
+				db,
+			)
+
+			if err != nil {
+				log.Printf("❌ خطا در ایجاد اسلایدر: %v", err)
 				utils.HandleErrors(w, err)
+				return
+			}
+
+			log.Printf("✅ اسلایدر با موفقیت ایجاد شد - ID: %d (زمان اجرا: %v)", slider.Id, time.Since(start))
+
+			// Set response headers
+			w.Header().Set("Content-Type", "application/json")
+			if err := json.NewEncoder(w).Encode(slider); err != nil {
+				log.Printf("❌ خطا در ارسال پاسخ: %v", err)
 			}
 		}
 	default:
 		{
-			http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
+			errMsg := fmt.Sprintf("Method %s Not Allowed", r.Method)
+			log.Printf("❌ %s", errMsg)
+			http.Error(w, errMsg, http.StatusMethodNotAllowed)
 		}
 	}
 }
 func getSlider(w http.ResponseWriter, r *http.Request, user *models.User) {
+	start := time.Now()
+	log.Printf("📥 درخواست دریافت لیست اسلایدرها از کاربر: %s (ID: %d)", user.Username, user.Id)
+
 	switch r.Method {
 	case http.MethodGet:
 		{
-			db, _ := database.GetDatabase()
-			slider, err := controllers.GetSliders(db)
-			if err == nil {
-				encoder := json.NewEncoder(w)
-				encoder.Encode(slider)
-			} else {
-				utils.HandleErrors(w, err)
+			// Log query parameters if any
+			if len(r.URL.Query()) > 0 {
+				log.Printf("🔍 پارامترهای کوئری: %v", r.URL.Query())
 			}
 
+			db, err := database.GetDatabase()
+			if err != nil {
+				log.Printf("❌ خطا در اتصال به دیتابیس: %v", err)
+				http.Error(w, "Database connection error", http.StatusInternalServerError)
+				return
+			}
+
+			sliders, err := controllers.GetSliders(db)
+			if err != nil {
+				log.Printf("❌ خطا در دریافت اسلایدرها: %v", err)
+				utils.HandleErrors(w, err)
+				return
+			}
+
+			log.Printf("✅ با موفقیت %d اسلایدر در مدت زمان %v دریافت شد", len(sliders), time.Since(start))
+
+			// Set response headers
+			w.Header().Set("Content-Type", "application/json")
+			if err := json.NewEncoder(w).Encode(sliders); err != nil {
+				log.Printf("❌ خطا در ارسال پاسخ: %v", err)
+			}
 		}
 	default:
 		{
-			http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
+			errMsg := fmt.Sprintf("Method %s Not Allowed", r.Method)
+			log.Printf("❌ %s", errMsg)
+			http.Error(w, errMsg, http.StatusMethodNotAllowed)
 		}
 	}
 }
 func deleteSlider(w http.ResponseWriter, r *http.Request, user *models.User) {
+	start := time.Now()
+	log.Printf("🗑️  درخواست حذف اسلایدر از کاربر: %s (ID: %d)", user.Username, user.Id)
+
 	switch r.Method {
-	case http.MethodGet:
+	case http.MethodDelete:
 		{
 			sliderIdString := r.URL.Query().Get("slider_id")
 			if sliderIdString == "" {
-				http.Error(w, "slider_id is required field", http.StatusNotAcceptable)
-			} else {
-				sliderId, err := strconv.Atoi(sliderIdString)
-				if err == nil {
-					db, _ := database.GetDatabase()
-					err = controllers.DeleteSlider(sliderId, db)
-					if err == nil {
-						w.WriteHeader(http.StatusOK)
-					} else {
-						utils.HandleErrors(w, err)
-					}
-				} else {
-					utils.HandleErrors(w, err)
-				}
+				errMsg := "پارامتر اجباری slider_id ارسال نشده است"
+				log.Printf("❌ %s", errMsg)
+				http.Error(w, errMsg, http.StatusNotAcceptable)
+				return
+			}
 
+			sliderId, err := strconv.Atoi(sliderIdString)
+			if err != nil {
+				errMsg := fmt.Sprintf("شناسه اسلایدر نامعتبر است: %s", sliderIdString)
+				log.Printf("❌ %s - خطا: %v", errMsg, err)
+				http.Error(w, "Invalid slider_id format", http.StatusBadRequest)
+				return
+			}
+
+			log.Printf("🔍 در حال حذف اسلایدر با شناسه: %d", sliderId)
+
+			db, err := database.GetDatabase()
+			if err != nil {
+				log.Printf("❌ خطا در اتصال به دیتابیس: %v", err)
+				http.Error(w, "Database connection error", http.StatusInternalServerError)
+				return
+			}
+
+			// First get the slider to log its details
+			slider, err := controllers.GetSliderById(sliderId, db)
+			if err != nil {
+				log.Printf("❌ خطا در یافتن اسلایدر با شناسه %d: %v", sliderId, err)
+				utils.HandleErrors(w, err)
+				return
+			}
+
+			log.Printf("🔍 یافت شد - اسلایدر ID: %d, تصویر: %s", slider.Id, slider.ImagePath)
+
+			err = controllers.DeleteSlider(sliderId, db)
+			if err != nil {
+				log.Printf("❌ خطا در حذف اسلایدر (ID: %d): %v", sliderId, err)
+				utils.HandleErrors(w, err)
+				return
+			}
+
+			log.Printf("✅ اسلایدر با موفقیت حذف شد - ID: %d, تصویر: %s (زمان اجرا: %v)",
+				sliderId, slider.ImagePath, time.Since(start))
+
+			w.WriteHeader(http.StatusOK)
+			if _, err := w.Write([]byte("اسلایدر با موفقیت حذف شد")); err != nil {
+				log.Printf("❌ خطا در ارسال پاسخ: %v", err)
 			}
 		}
 	default:
 		{
-			http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
+			errMsg := fmt.Sprintf("Method %s Not Allowed", r.Method)
+			log.Printf("❌ %s", errMsg)
+			http.Error(w, errMsg, http.StatusMethodNotAllowed)
 		}
 	}
 }

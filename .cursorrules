@@ -1,0 +1,6 @@
+# قوانین راهنمای Cursor برای پروژه winBall
+
+- مرجع کامل قوانین: `docs/ARCHITECTURE.md`
+- واحد مبلغ: UI=TON (نمایش 2 رقم)، DB کیف‌پول=nanoTON
+- بازی Realtime از طریق WebSocket با پیام‌های مستند (GAME_CREATED/GAME_UPDATED)
+- Rate Limiting و JWT الزامی طبق مرجع بالا

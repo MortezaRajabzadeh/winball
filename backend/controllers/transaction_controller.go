@@ -45,13 +45,13 @@ func CreateTransaction(coinType, transactionType, amount, status, transactionId 
 						err = user.Save(db)
 						query := "INSERT INTO transactions (coin_type,transaction_type,amount,status,transaction_id,more_info,creator_id) VALUES (?,?,?,?,?,?,?)"
 						result, err := db.Exec(query, coinType, transactionType, amount, status, transactionId, moreInfo, creatorId)
-											if err == nil {
-						if increasedAmount > 0 && coinType == "ton" {
-							DoReferalThings(user, increasedAmount, coinType, db)
+						if err == nil {
+							if increasedAmount > 0 {
+								DoReferalThings(user, increasedAmount, "ton", db)
+							}
+							lastInsertedId, _ := result.LastInsertId()
+							return getTransactionById(int(lastInsertedId), db)
 						}
-						lastInsertedId, _ := result.LastInsertId()
-						return getTransactionById(int(lastInsertedId), db)
-					}
 					}
 				}
 			}
@@ -131,47 +131,26 @@ func GetTransactionsAmountPerConditions(transactionType, coinType string, daysBe
 	return outgoingTonAmountPerDayFloat
 }
 func DoReferalThings(payer models.User, amount float64, coinType string, db *sql.DB) {
-	fmt.Printf("DEBUG: DoReferalThings called - User: %s, Amount: %f, CoinType: %s\n", payer.UserUniqueNumber, amount, coinType)
-	
 	invitations, err := GetInvitationByInvitedId(payer.UserUniqueNumber, db)
-	if err != nil {
-		fmt.Printf("DEBUG: Error getting invitations for user %s: %v\n", payer.UserUniqueNumber, err)
-		return
-	}
-	
-	if len(invitations) == 0 {
-		fmt.Printf("DEBUG: No invitations found for user %s\n", payer.UserUniqueNumber)
-		return
-	}
-	
-	fmt.Printf("DEBUG: Found %d invitations for user %s\n", len(invitations), payer.UserUniqueNumber)
-	
-	invitation := invitations[0]
-	firstInvitorUser := invitation.Invitor
-	fmt.Printf("DEBUG: First level referral - Invitor: %s, Amount: %f, Percent: 1%%\n", firstInvitorUser.UserUniqueNumber, amount)
-	//first invitor user takes 1% of the amount .
-	AddAmountToUserInventoryByCoinType(amount, 0.01, firstInvitorUser, coinType, db)
-	
-	invitations, err = GetInvitationByInvitedId(firstInvitorUser.UserUniqueNumber, db)
 	if len(invitations) > 0 && err == nil {
-		invitation = invitations[0]
-		secondInvitorUser := invitation.Invitor
-		fmt.Printf("DEBUG: Second level referral - Invitor: %s, Amount: %f, Percent: 0.3%%\n", secondInvitorUser.UserUniqueNumber, amount)
-		AddAmountToUserInventoryByCoinType(amount, 0.003, secondInvitorUser, coinType, db)
-		//second invitor user takes 0.3% of the amount.
-		
-		invitations, err = GetInvitationByInvitedId(secondInvitorUser.UserUniqueNumber, db)
+		invitation := invitations[0]
+		firstInvitorUser := invitation.Invitor
+		//first invitor user takes 1% of the amount .
+		AddAmountToUserInventoryByCoinType(amount, 0.01, firstInvitorUser, coinType, db)
+		invitations, err = GetInvitationByInvitedId(firstInvitorUser.UserUniqueNumber, db)
 		if len(invitations) > 0 && err == nil {
 			invitation = invitations[0]
-			thirdInvitorUser := invitation.Invitor
-			fmt.Printf("DEBUG: Third level referral - Invitor: %s, Amount: %f, Percent: 0.1%%\n", thirdInvitorUser.UserUniqueNumber, amount)
-			AddAmountToUserInventoryByCoinType(amount, 0.001, thirdInvitorUser, coinType, db)
-			//third invitor user takes 0.1% of the amount.
-		} else {
-			fmt.Printf("DEBUG: No third level invitations found for user %s\n", secondInvitorUser.UserUniqueNumber)
+			secondInvitorUser := invitation.Invitor
+			AddAmountToUserInventoryByCoinType(amount, 0.003, secondInvitorUser, coinType, db)
+			//second invitor user takes 0.5% of the amount.
+			invitations, err = GetInvitationByInvitedId(secondInvitorUser.UserUniqueNumber, db)
+			if len(invitations) > 0 && err == nil {
+				invitation = invitations[0]
+				thirdInvitorUser := invitation.Invitor
+				AddAmountToUserInventoryByCoinType(amount, 0.001, thirdInvitorUser, coinType, db)
+				//second invitor user takes 0.25% of the amount.
+			}
 		}
-	} else {
-		fmt.Printf("DEBUG: No second level invitations found for user %s\n", firstInvitorUser.UserUniqueNumber)
 	}
 }
 func GetSumOfTheTransactionsAmount(transactions []models.TransactionModel) float64 {

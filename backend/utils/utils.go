@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"math/rand"
 	"net/http"
+	"strconv"
 	"strings"
 	"time"
 
@@ -76,57 +77,39 @@ func isGameBetsIsMultiple(gameBets []models.UserBetModel) (bool, bool) {
 }
 
 func GetOneMinModelBaseGameBets(gameBets []models.UserBetModel) string {
-	fmt.Printf("\n🎲 GAME_CALCULATION_START: Total bets=%d\n", len(gameBets))
-	
 	newBets := RemoveUserDemosFromGameBets(gameBets)
 	if len(newBets) == 0 {
-		result := GetOneMinGameResultRandom()
-		fmt.Printf("🎯 NO_REAL_BETS: Random result=%s\n", result)
-		LogGameBetAnalysis(gameBets, result)
-		return result
+		return GetOneMinGameResultRandom()
 	} else {
 		var hasChoosenOneGameResult bool = true
 		chooseMultipleHome, _ := isGameBetsIsMultiple(newBets)
-		
+		// for _, bet := range newBets {
+		// userChoices := bet.UserChoices
 		if chooseMultipleHome {
 			hasChoosenOneGameResult = false
+			// break
 		}
-		
+		// }
 		if hasChoosenOneGameResult {
 			randomNumber := GetRandomNumberBetweenMinAndMax(0, 101)
 			var userGameBetted string
 			bytes, _ := json.Marshal(newBets[0].UserChoices)
 			json.Unmarshal(bytes, &userGameBetted)
 			userGameBetted = FilterImageStringPath(userGameBetted)
-			
 			if strings.ToLower(userGameBetted) == "red" || strings.ToLower(userGameBetted) == "green" || strings.ToLower(userGameBetted) == "purple" {
-				fmt.Printf("🌈 COLOR_BET: Choice=%s, Random=%d, ColorWinRate=%d%%\n", userGameBetted, randomNumber, configs.COLOR_WIN_RATE)
-				if randomNumber <= configs.COLOR_WIN_RATE {
-					result := getOneMinGameResultRandomByColor(userGameBetted)
-					fmt.Printf("✅ COLOR_WIN: User chose %s, Result=%s\n", userGameBetted, result)
-					LogGameBetAnalysis(gameBets, result)
-					return result
-				} else {
-					result := getOneMinGameResultRandomWithoutColor(userGameBetted)
-					fmt.Printf("❌ COLOR_LOSE: User chose %s, Result=%s\n", userGameBetted, result)
-					LogGameBetAnalysis(gameBets, result)
-					return result
-				}
-			} else {
-				fmt.Printf("🔢 NUMBER_BET: Choice=%s, Random=%d, WinRate=%d%%\n", userGameBetted, randomNumber, configs.WIN_RATE)
 				if randomNumber <= configs.WIN_RATE {
-					fmt.Printf("✅ NUMBER_WIN: User chose %s, Result=%s\n", userGameBetted, userGameBetted)
-					LogGameBetAnalysis(gameBets, userGameBetted)
-					return userGameBetted
+					userGameBetted = getOneMinGameResultRandomByColor(userGameBetted)
 				} else {
-					result := getOneMinGameResultRandomWithoutColor(userGameBetted)
-					fmt.Printf("❌ NUMBER_LOSE: User chose %s, Result=%s\n", userGameBetted, result)
-					LogGameBetAnalysis(gameBets, result)
-					return result
+					userGameBetted = getOneMinGameResultRandomWithoutColor(userGameBetted)
 				}
+				return userGameBetted
+			} else {
+				if randomNumber > configs.WIN_RATE {
+					userGameBetted = getOneMinGameResultRandomWithoutColor(userGameBetted)
+				}
+				return userGameBetted
 			}
 		} else {
-			fmt.Printf("🎯 MULTIPLE_BETS: House edge calculation\n")
 			// user is selected more that 1 gamebets . here do the sum of the all selected game bets and return the minimum home!
 			var gameBetsResultsAmount map[string]float64 = map[string]float64{}
 			for _, bet := range newBets {
@@ -150,25 +133,14 @@ func GetOneMinModelBaseGameBets(gameBets []models.UserBetModel) string {
 						minimumKey = k
 					}
 				}
-				
 				if minimumKey == "red" || minimumKey == "purple" || minimumKey == "green" {
-					result := getOneMinGameResultRandomByColor(minimumKey)
-					fmt.Printf("🏆 HOUSE_WINS: Minimum bet was %s (%.2f), Result=%s\n", minimumKey, minimumAmount, result)
-					LogGameBetAnalysis(gameBets, result)
-					return result
+					minimumKey = getOneMinGameResultRandomByColor(minimumKey)
 				}
-				
-				fmt.Printf("🏆 HOUSE_WINS: Minimum bet was %s (%.2f)\n", minimumKey, minimumAmount)
-				LogGameBetAnalysis(gameBets, minimumKey)
 				return minimumKey
 			}
 		}
 	}
-	
-	result := GetOneMinGameResultRandom()
-	fmt.Printf("🎯 FALLBACK: Random result=%s\n", result)
-	LogGameBetAnalysis(gameBets, result)
-	return result
+	return GetOneMinGameResultRandom()
 }
 func getOneMinGameResultRandomByColor(color string) string {
 	var randomResult = []string{"redPurple0", "green1", "red2", "green3", "red4", "greenPurple5", "red6", "green7", "red8", "green9"}
@@ -226,6 +198,18 @@ func GetGameDiffByGameType(gameType string) int {
 		{
 			return 301
 		}
+	case "red_black_30s":
+		{
+			return 31
+		}
+	case "red_black_3m":
+		{
+			return 181
+		}
+	case "red_black_5m":
+		{
+			return 301
+		}
 	}
 	return 61
 }
@@ -233,98 +217,86 @@ func GetDifferenceBetweenUserAmountAndDepositAmount(depositAmount, userInventory
 	return depositAmount - userInventoryAmount
 }
 
-// SendGameResultToTelegram ارسال نتیجه بازی به تلگرام
+// Red Black Game specific utility functions
+func GetRedBlackGameResult() string {
+	var results = []string{"red", "black"}
+	randomInt := rand.Intn(len(results))
+	return results[randomInt]
+}
+
+func GetRedBlackGameResultBaseOnBets(gameBets []models.UserBetModel) string {
+	newBets := RemoveUserDemosFromGameBets(gameBets)
+	if len(newBets) == 0 {
+		return GetRedBlackGameResult()
+	}
+
+	// Calculate total amounts for red and black
+	var redAmount, blackAmount float64
+	for _, bet := range newBets {
+		var userChoice string
+		bytes, _ := json.Marshal(bet.UserChoices)
+		json.Unmarshal(bytes, &userChoice)
+		userChoice = FilterImageStringPath(userChoice)
+		userChoice = strings.ToLower(strings.TrimSpace(userChoice))
+
+		betAmount, _ := strconv.ParseFloat(bet.Amount, 64)
+		switch userChoice {
+		case "red":
+			redAmount += betAmount
+		case "black":
+			blackAmount += betAmount
+		}
+	}
+
+	// Generate random number for house edge
+	randomNumber := GetRandomNumberBetweenMinAndMax(0, 101)
+
+	// Apply house edge - favor the color with less betting
+	if randomNumber > configs.WIN_RATE {
+		// House wins - choose the color with more betting to lose
+		if redAmount > blackAmount {
+			return "black" // Red loses
+		} else if blackAmount > redAmount {
+			return "red" // Black loses
+		} else {
+			// Equal bets - random result
+			return GetRedBlackGameResult()
+		}
+	} else {
+		// Players win - choose the color with more betting to win
+		if redAmount > blackAmount {
+			return "red" // Red wins
+		} else if blackAmount > redAmount {
+			return "black" // Black wins  
+		} else {
+			// Equal bets - random result
+			return GetRedBlackGameResult()
+		}
+	}
+}
+
 func SendGameResultToTelegram(gameHash string, result string) error {
-	fmt.Printf("🔔 GAME_RESULT: Hash=%s, Result=%s\n", gameHash, result)
-	
 	botToken := configs.TELEGRAM_BOT_TOKEN
 	chatID := configs.TELEGRAM_CHAT_ID
-	
-	if botToken == "" || chatID == "" {
-		fmt.Println("⚠️ TELEGRAM: Bot token یا chat ID تنظیم نشده")
-		return nil
-	}
-	
 	message := fmt.Sprintf("🔔 پیش‌بینی نتیجه بازی:\nHash: %s\nنتیجه: %s", gameHash, result)
-	
+
 	url := fmt.Sprintf("https://api.telegram.org/bot%s/sendMessage", botToken)
 	payload := map[string]interface{}{
-		"chat_id": chatID,
-		"text": message,
+		"chat_id":    chatID,
+		"text":       message,
 		"parse_mode": "HTML",
 	}
-	
+
 	jsonData, err := json.Marshal(payload)
 	if err != nil {
-		fmt.Printf("❌ TELEGRAM_ERROR: Marshal error: %v\n", err)
 		return err
 	}
-	
-	fmt.Printf("📤 TELEGRAM: Sending to %s\n", url)
+
 	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
 	if err != nil {
-		fmt.Printf("❌ TELEGRAM_ERROR: HTTP error: %v\n", err)
 		return err
 	}
 	defer resp.Body.Close()
-	
-	fmt.Printf("✅ TELEGRAM: Response status: %s\n", resp.Status)
-	return nil
-}
 
-// LogGameBetAnalysis لاگ تحلیل شرط‌بندی‌ها
-func LogGameBetAnalysis(gameBets []models.UserBetModel, result string) {
-	fmt.Printf("\n🎲 GAME_ANALYSIS: Total Bets=%d\n", len(gameBets))
-	
-	realBets := RemoveUserDemosFromGameBets(gameBets)
-	fmt.Printf("👤 REAL_BETS: Count=%d (after removing demos)\n", len(realBets))
-	
-	if len(realBets) == 0 {
-		fmt.Printf("🎯 DECISION: Random result (no real bets)\n")
-		fmt.Printf("🏆 FINAL_RESULT: %s\n\n", result)
-		return
-	}
-	
-	chooseMultiple, _ := isGameBetsIsMultiple(realBets)
-	fmt.Printf("🎮 BET_TYPE: Multiple=%v\n", chooseMultiple)
-	
-	if !chooseMultiple && len(realBets) > 0 {
-		// فقط یک انتخاب
-		var userGameBetted string
-		bytes, _ := json.Marshal(realBets[0].UserChoices)
-		json.Unmarshal(bytes, &userGameBetted)
-		userGameBetted = FilterImageStringPath(userGameBetted)
-		
-		isColor := strings.ToLower(userGameBetted) == "red" || strings.ToLower(userGameBetted) == "green" || strings.ToLower(userGameBetted) == "purple"
-		winRate := configs.WIN_RATE
-		if isColor {
-			winRate = configs.COLOR_WIN_RATE
-		}
-		
-		fmt.Printf("🎯 SINGLE_BET: Choice=%s, IsColor=%v, WinRate=%d%%\n", userGameBetted, isColor, winRate)
-	} else {
-		// چندین انتخاب - محاسبه مجموع مبلغ هر گزینه
-		var gameBetsResultsAmount map[string]float64 = map[string]float64{}
-		for _, bet := range realBets {
-			var listOfUserBetResult []string
-			json.Unmarshal([]byte(bet.UserChoices), &listOfUserBetResult)
-			for _, userBetResult := range listOfUserBetResult {
-				gameBetsResultsAmount[userBetResult] += float64(bet.Amount) / float64(len(listOfUserBetResult))
-			}
-		}
-		
-		fmt.Printf("💰 MULTIPLE_BETS: Amounts per choice:\n")
-		var minAmount float64 = -1
-		var minKey string
-		for choice, amount := range gameBetsResultsAmount {
-			fmt.Printf("   %s: %.2f\n", choice, amount)
-			if minAmount == -1 || amount < minAmount {
-				minAmount = amount
-				minKey = choice
-			}
-		}
-		fmt.Printf("🎯 MINIMUM_AMOUNT: %s (%.2f) - This will WIN\n", minKey, minAmount)
-	}
-	
-	fmt.Printf("🏆 FINAL_RESULT: %s\n\n", result)
+	return nil
 }

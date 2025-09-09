@@ -41,15 +41,15 @@ class OneMinGameFunctions {
         }
       case GameType.red_black_30s:
         {
-          return 'Red Black 30s Game';
+          return 'Red & Black (30s)';
         }
-      case GameType.red_black_1min:
+      case GameType.red_black_3m:
         {
-          return 'Red Black 1 Min Game';
+          return 'Red & Black (3m)';
         }
-      case GameType.red_black_3min:
+      case GameType.red_black_5m:
         {
-          return 'Red Black 3 Min Game';
+          return 'Red & Black (5m)';
         }
     }
   }
@@ -72,13 +72,13 @@ class OneMinGameFunctions {
         {
           return '30 Seconds';
         }
-      case GameType.red_black_1min:
-        {
-          return '1 Minute';
-        }
-      case GameType.red_black_3min:
+      case GameType.red_black_3m:
         {
           return '3 Minutes';
+        }
+      case GameType.red_black_5m:
+        {
+          return '5 Minutes';
         }
     }
   }
@@ -93,10 +93,10 @@ class OneMinGameFunctions {
         return 60;
       case GameType.red_black_30s:
         return 30;
-      case GameType.red_black_1min:
-        return 60;
-      case GameType.red_black_3min:
+      case GameType.red_black_3m:
         return 180;
+      case GameType.red_black_5m:
+        return 300;
     }
   }
 

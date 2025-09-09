@@ -39,7 +39,6 @@ class AppElevatedButtonWidget extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         focusNode: focusNode,
-        iconAlignment: iconAlignment,
         key: key,
         onFocusChange: onFocusChanged,
         onHover: onHover,

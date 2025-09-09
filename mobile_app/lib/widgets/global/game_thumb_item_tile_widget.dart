@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:one_min_game_repository/one_min_game_repository.dart';
-import 'package:red_black_game_repository/red_black_game_repository.dart';
-import 'package:winball/configs/configs.dart';
 import 'package:winball/extensions/extensions.dart';
 import 'package:winball/screens/screens.dart';
 
@@ -28,11 +26,13 @@ class GameThumbItemTileWidget extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: () {
-          // منطق شرطی برای هدایت به صفحه مناسب
-          if (_isRedBlackGame(gameType)) {
+          // هدایت به صفحه بازی
+          if (gameType == GameType.red_black_30s || 
+              gameType == GameType.red_black_3m || 
+              gameType == GameType.red_black_5m) {
             context.to(
               child: RedBlackGameScreen(
-                gameType: _convertToRedBlackGameType(gameType),
+                gameType: gameType,
               ),
             );
           } else {
@@ -123,24 +123,5 @@ class GameThumbItemTileWidget extends StatelessWidget {
         ),
       ),
     );
-  }
-  
-  // تشخیص اینکه آیا بازی از نوع Red-Black است
-  bool _isRedBlackGame(GameType gameType) {
-    return gameType.name.contains('red_black');
-  }
-  
-  // تبدیل GameType به RedBlackGameType
-  RedBlackGameType _convertToRedBlackGameType(GameType gameType) {
-    switch (gameType.name) {
-      case 'red_black_30s':
-        return RedBlackGameType.red_black_30s;
-      case 'red_black_1min':
-        return RedBlackGameType.red_black_1min;
-      case 'red_black_3min':
-        return RedBlackGameType.red_black_3min;
-      default:
-        return RedBlackGameType.red_black_1min; // پیش‌فرض
-    }
   }
 }

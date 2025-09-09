@@ -1,20 +1,23 @@
 name: red_black_game_repository
-description: Red Black Game Repository for handling Red Black game data and operations
-version: 1.0.0
+description: Repository for Red Black Game functionality
+version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
-  flutter: ">=3.0.0"
+  sdk: ^3.5.1
 
 dependencies:
   flutter:
     sdk: flutter
   base_repository:
-    path: ../base_repository
+    path: ../base_repository/
   network_repository:
-    path: ../network_repository
+    path: ../network_repository/
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

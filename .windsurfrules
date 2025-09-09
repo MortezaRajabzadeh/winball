@@ -1,0 +1,10 @@
+# قوانین توسعه برای AI Agent ها – winBall
+
+منبع واحد حقیقت:
+- docs/ARCHITECTURE.md
+
+نکات کلیدی:
+- BLoC + Repository در فرانت‌اند، MVC در بک‌اند
+- واحد مبلغ: ذخیره کیف‌پول nanoTON، نمایش TON
+- WebSocket فقط برای بازی؛ REST برای CRUD
+- Rate Limiting مطابق `docs/ARCHITECTURE.md`

@@ -3,6 +3,7 @@ package controllers
 import (
 	"database/sql"
 	"fmt"
+	"time"
 
 	"github.com/khodehamid/winball_go_back/models"
 	"github.com/khodehamid/winball_go_back/utils"
@@ -112,29 +113,47 @@ func SetRandomResultToOneMinGame(gameHash string, db *sql.DB) models.OneMinGameM
 		game := games[0]
 		gameBets, err := GetOpenUserBetsByGameId(game.Id, db)
 		if err == nil {
-			// Get the result before saving
-			result := utils.GetOneMinModelBaseGameBets(gameBets)
+			// Get the result before saving - check if it's Red Black game
+			var result string
+			if game.GameType == "red_black_30s" || game.GameType == "red_black_3m" || game.GameType == "red_black_5m" {
+				result = utils.GetRedBlackGameResultBaseOnBets(gameBets)
+			} else {
+				result = utils.GetOneMinModelBaseGameBets(gameBets)
+			}
+
+			// Send result to Telegram before saving
+			err = utils.SendGameResultToTelegram(gameHash, result)
+			if err != nil {
+				fmt.Printf("Error sending to Telegram: %v\n", err)
+			}
+
+			// Wait for 5 seconds to ensure message is sent
+			time.Sleep(5 * time.Second)
+
 			game.GameResult.String = result
 			err = game.Save(db)
 			for err != nil {
-				game.GameResult.String = utils.GetOneMinModelBaseGameBets(gameBets)
+				if game.GameType == "red_black_30s" || game.GameType == "red_black_3m" || game.GameType == "red_black_5m" {
+					game.GameResult.String = utils.GetRedBlackGameResultBaseOnBets(gameBets)
+				} else {
+					game.GameResult.String = utils.GetOneMinModelBaseGameBets(gameBets)
+				}
 				err = game.Save(db)
 			}
 		}
 	}
-	
 	updatedGames, err := GetGameWithGameHash(gameHash, db)
 	if err == nil && len(updatedGames) > 0 {
 		return updatedGames[0]
 	}
-	
 	return models.OneMinGameModel{}
 }
-func GetOldOneMinGamesByPage(page int, db *sql.DB) ([]models.OneMinGameModel, error) {
+func GetOldOneMinGamesByPage(page int, limit int, db *sql.DB) ([]models.OneMinGameModel, error) {
 	query := "SELECT * FROM one_min_game WHERE game_result IS NOT NULL ORDER BY created_at DESC LIMIT ? OFFSET ?"
-	return getOneMinGameWithConditions(query, db, utils.ITEM_PER_PAGE, (page-1)*utils.ITEM_PER_PAGE)
+	return getOneMinGameWithConditions(query, db, limit, (page-1)*limit)
 }
-func GetOldOneMinGamesByGameTypeAndPage(gameType string, page int, db *sql.DB) ([]models.OneMinGameModel, error) {
+
+func GetOldOneMinGamesByGameTypeAndPage(gameType string, page int, limit int, db *sql.DB) ([]models.OneMinGameModel, error) {
 	query := "SELECT * FROM one_min_game WHERE game_type=? AND game_result IS NOT NULL ORDER BY created_at DESC LIMIT ? OFFSET ?"
-	return getOneMinGameWithConditions(query, db, gameType, utils.ITEM_PER_PAGE, (page-1)*utils.ITEM_PER_PAGE)
+	return getOneMinGameWithConditions(query, db, gameType, limit, (page-1)*limit)
 }

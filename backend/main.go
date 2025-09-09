@@ -23,12 +23,9 @@ func main() {
 	}
 	defer db.Close()
 	
-	// شروع job خودکار چک کردن تراکنش‌ها
-	fmt.Println("🚀 Starting automatic transaction checker...")
+
 	jobs.StartTransactionChecker()
 	
-	// شروع AI Casino Manager
-	fmt.Println("🤖 AI Casino Manager initialized")
 	
 	//! real code is here
 	sm := &http.ServeMux{}

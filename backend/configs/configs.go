@@ -10,7 +10,6 @@ const DepositMessage = "INTERNAL"
 
 // When Casino send money to user
 const WithdrawMessage = "EXTERNAL_IN"
-const ENABLE_FORCE_LOSS_ON_STREAK = true
 
 var GameResultPossibilities map[string]float32 = map[string]float32{"redPurple0": 9.75, "green1": 9.75, "red2": 9.75, "green3": 9.75, "red4": 9.75, "greenPurple5": 9.75, "red6": 9.75, "green7": 9.75, "red8": 9.75, "green9": 9.75, "red": 1.95, "purple": 4.49, "green": 1.95}
 var GameResultColorsPossibilities []string = []string{"red", "green", "purple"}

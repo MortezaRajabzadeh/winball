@@ -76,6 +76,7 @@ Start inviting now and enjoy the benefits!
   static const String red = 'Red';
   static const String purple = 'Purple';
   static const String green = 'Green';
+  static const String black = 'Black';
   static const String balance = 'Balance:';
   static const String confirm = 'Confirm';
   static const String ranking = 'Ranking';

@@ -165,54 +165,35 @@ func GetUserWithUsername(username string, db *sql.DB) (models.User, error) {
 	return models.User{}, errors.New("user not found")
 }
 func AddAmountToUserInventoryByCoinType(amount, percent float64, user models.User, coinType string, db *sql.DB) {
-	// ابتدا کاربر را از دیتابیس بازیابی می‌کنیم تا از آخرین وضعیت استفاده کنیم
-	currentUser, err := GetUserWithId(user.Id, db)
-	if err != nil {
-		return
-	}
-	
 	switch coinType {
 	case "ton":
 		{
 			tonAmountPay := amount * percent
-			userTonInventory, err := strconv.ParseFloat(currentUser.TonInventory, 64)
+			userTonInventory, err := strconv.ParseFloat(user.TonInventory, 64)
 			if err == nil {
 				userTonInventory += tonAmountPay
-				currentUser.TonInventory = utils.ConvertAnyToString(userTonInventory)
+				user.TonInventory = utils.ConvertAnyToString(userTonInventory)
 				//here is from ton inventory
-				userTotalWins, _ := strconv.ParseFloat(currentUser.TotalWins, 64)
+				userTotalWins, _ := strconv.ParseFloat(user.TotalWins, 64)
 				userTotalWins += tonAmountPay
-				currentUser.TotalWins = utils.ConvertAnyToString(userTotalWins)
-				
-				err = currentUser.Save(db)
-				if err != nil {
-					return
-				}
-				
+				user.TotalWins = utils.ConvertAnyToString(userTotalWins)
+				user.Save(db)
 				query := "INSERT INTO transactions (coin_type,transaction_type,amount,status,transaction_id,more_info,creator_id) VALUES (?,?,?,?,?,?,?)"
-				_, err = db.Exec(query, coinType, "referral_bonus", tonAmountPay, "success", utils.GetRandomString(16), fmt.Sprintf("the %v amount is added to your inventory cause of referal link", tonAmountPay), currentUser.Id)
+				db.Exec(query, coinType, "deposit", tonAmountPay, "success", utils.GetRandomString(16), fmt.Sprintf("the %v amount is added to your inventory cause of referal link", tonAmountPay), user.Id)
+				// CreateTransaction("ton", "deposit", utils.ConvertAnyToString(tonAmountPay), "success", utils.GetRandomString(16), fmt.Sprintf("the %v amount is added to your inventory cause of referal link", tonAmountPay), user.Id, db)
 			}
 		}
 	case "stars":
 		{
 			starsAmountPay := amount * percent
-			userStarsInventory, err := strconv.ParseFloat(currentUser.StarsInventory, 64)
+			userStarsInventory, err := strconv.ParseFloat(user.StarsInventory, 64)
 			if err == nil {
 				userStarsInventory += starsAmountPay
 				userStarsInventory = math.Floor(userStarsInventory)
-				currentUser.StarsInventory = utils.ConvertAnyToString(userStarsInventory)
-				
-				userTotalWins, _ := strconv.ParseFloat(currentUser.TotalWins, 64)
-				userTotalWins += starsAmountPay
-				currentUser.TotalWins = utils.ConvertAnyToString(userTotalWins)
-				
-				err = currentUser.Save(db)
-				if err != nil {
-					return
-				}
-				
-				query := "INSERT INTO transactions (coin_type,transaction_type,amount,status,transaction_id,more_info,creator_id) VALUES (?,?,?,?,?,?,?)"
-				_, err = db.Exec(query, coinType, "referral_bonus", starsAmountPay, "success", utils.GetRandomString(16), fmt.Sprintf("the %v amount is added to your inventory cause of referal link", starsAmountPay), currentUser.Id)
+				//here is from stars inventory
+				user.TotalBets += int(userStarsInventory)
+				user.StarsInventory = utils.ConvertAnyToString(userStarsInventory)
+				user.Save(db)
 			}
 		}
 	}

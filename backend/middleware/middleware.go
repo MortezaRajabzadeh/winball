@@ -30,7 +30,7 @@ func ValidateJWT(next func(w http.ResponseWriter, r *http.Request, user *models.
 			if err == nil {
 				if user.IsBlocked() {
 					w.WriteHeader(http.StatusForbidden)
-					w.Write([]byte("You are blocked. Please contact admin."))
+					w.Write([]byte("It seems you are blocked from our servers . please contact to admin to solve this problem"))
 				} else {
 					if user.Id > 0 {
 						next(w, r, &user)

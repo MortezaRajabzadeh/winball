@@ -83,7 +83,7 @@ CREATE TABLE `levels` (
 CREATE TABLE `transactions` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `coin_type` ENUM ('ton', 'stars', 'usdt', 'btc', 'cusd') NOT NULL DEFAULT 'ton',
-  `transaction_type` ENUM ('deposit', 'withdraw', 'referral_bonus') NOT NULL,
+  `transaction_type` ENUM ('deposit', 'withdraw') NOT NULL,
   `amount` varchar(255) NOT NULL,
   `status` ENUM ('pending', 'success', 'faild') DEFAULT 'pending',
   `transaction_id` varchar(255) NOT NULL,
@@ -169,16 +169,3 @@ ALTER TABLE `site_settings` ADD FOREIGN KEY (`creator_id`) REFERENCES `users` (`
 ALTER TABLE `user_bets` ADD FOREIGN KEY (`game_id`) REFERENCES `one_min_game` (`id`);
 
 ALTER TABLE `user_bets` ADD FOREIGN KEY (`creator_id`) REFERENCES `users` (`id`);
-
-CREATE TABLE `blockchain_tracking` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `wallet_address` varchar(255) NOT NULL UNIQUE,
-  `last_processed_lt` varchar(255) NOT NULL DEFAULT '0',
-  `last_processed_hash` varchar(255),
-  `created_at` datetime DEFAULT (now()),
-  `updated_at` datetime DEFAULT (now())
-);
-
--- INSERT INTO `blockchain_tracking` (`wallet_address`, `last_processed_lt`, `last_processed_hash`) 
--- VALUES ('YOUR_CASINO_WALLET_ADDRESS', '0', '');
--- توجه: آدرس واقعی کیف پول کازینو را جایگزین کنید

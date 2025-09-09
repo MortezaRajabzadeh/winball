@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart' show Widget;
-import 'package:red_black_game_repository/red_black_game_repository.dart';
 import 'package:winball/screens/screens.dart';
 
 abstract class AppPages {
@@ -39,6 +38,5 @@ abstract class AppPages {
     searchScreen: SearchScreen(),
     withdrawScreen: WithdrawScreen(),
     serviceScreen: ServiceScreen(),
-    redBlackGameScreen: RedBlackGameScreen(gameType: RedBlackGameType.red_black_1min), // default
   };
 }

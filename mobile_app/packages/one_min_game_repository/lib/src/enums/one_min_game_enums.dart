@@ -25,6 +25,7 @@ enum UserBetOptions {
   green,
   red,
   purple,
+  black,
 }
 
 enum GameType {
@@ -32,6 +33,6 @@ enum GameType {
   three_min_game,
   five_min_game,
   red_black_30s,
-  red_black_1min,
-  red_black_3min,
+  red_black_3m,
+  red_black_5m,
 }

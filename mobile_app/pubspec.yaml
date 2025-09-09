@@ -52,8 +52,6 @@ dependencies:
     path: packages/network_repository/
   one_min_game_repository:
     path: packages/one_min_game_repository/
-  red_black_game_repository:
-    path: packages/red_black_game_repository/
   site_settings_repository:
     path: packages/site_settings_repository/
   support_repository:

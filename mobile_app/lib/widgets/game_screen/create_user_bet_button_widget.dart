@@ -79,8 +79,8 @@ class CreateUserBetButtonWidget extends StatelessWidget {
                                   context.pop();
                                 },
                                 amount: amount,
-                                gameId: currentWebsocketServerModelValueNotifier
-                                    .value.oneMinGame.id,
+                                gameId: (currentWebsocketServerModelValueNotifier
+                                    .value.oneMinGame).id,
                                 userChoices:
                                     listOfSelectedUserBetOptionsValueNotifier
                                         .value,
@@ -114,7 +114,7 @@ class CreateUserBetButtonWidget extends StatelessWidget {
                                 currentWebsocketServerModelValueNotifier,
                             builder: (context, currentWebsocket, _) {
                               return Text(
-                                currentWebsocket.oneMinGame.eachGameUniqueNumber
+                                (currentWebsocket.oneMinGame).eachGameUniqueNumber
                                     .toString(),
                               );
                             },

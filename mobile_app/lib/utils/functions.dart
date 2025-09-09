@@ -221,6 +221,8 @@ class Functions {
         return Colors.red;
       case UserBetOptions.purple:
         return Colors.purple;
+      case UserBetOptions.black:
+        return Colors.black;
     }
   }
 
@@ -261,6 +263,8 @@ class Functions {
         return 'Red';
       case UserBetOptions.purple:
         return 'Purple';
+      case UserBetOptions.black:
+        return 'Black';
     }
   }
 
@@ -295,7 +299,8 @@ class Functions {
     for (final UserBetOptions userBetOption in userBetOptions) {
       if (userBetOption == UserBetOptions.green ||
           userBetOption == UserBetOptions.red ||
-          userBetOption == UserBetOptions.purple) {
+          userBetOption == UserBetOptions.purple ||
+          userBetOption == UserBetOptions.black) {
         colorPickedCount++;
       }
     }
@@ -384,7 +389,8 @@ class Functions {
       {required String amount, required CoinType coinType}) {
     switch (coinType) {
       case CoinType.ton:
-        return (amount.convertToNum.toDouble() / AppConfigs.tonBaseFactor).toStringAsFixed(3);
+        return (amount.convertToNum.toDouble() / AppConfigs.tonBaseFactor)
+            .toStringAsFixed(3);
       case CoinType.stars:
         return double.parse(amount).toStringAsFixed(3);
     }

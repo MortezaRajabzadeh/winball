@@ -52,17 +52,17 @@ abstract class AppConfigs {
     'Red & Green [one min game]': GameType.one_min_game,
     'Red & Green [three min game]': GameType.three_min_game,
     'Red & Green [five min game]': GameType.five_min_game,
-    'Red & Black [30s game]': GameType.red_black_30s,
-    'Red & Black [1 min game]': GameType.red_black_1min,
-    'Red & Black [3 min game]': GameType.red_black_3min,
+    'Red & Black [30s]': GameType.red_black_30s,
+    'Red & Black [3m]': GameType.red_black_3m,
+    'Red & Black [5m]': GameType.red_black_5m,
   };
   //234234666
   static const String oneMinGameImage = '${baseAssetsIcons}1min.png';
   static const String threeMinGameImage = '${baseAssetsIcons}3min.png';
   static const String fiveMinGameImage = '${baseAssetsIcons}5min.png';
-  static const String redBlack30sImage = '${baseAssetsIcons}Red_Black30s.png';
-  static const String redBlack1MinImage = '${baseAssetsIcons}Red_Black1.png';
-  static const String redBlack3MinImage = '${baseAssetsIcons}Red_Black3.png';
+  static const String redBlack30sImage = '${baseAssetsIcons}red_black_30s.png';
+  static const String redBlack3mImage = '${baseAssetsIcons}red_black_3m.png';
+  static const String redBlack5mImage = '${baseAssetsIcons}red_black_5m.png';
   static const String fontFamily = 'ptsans';
   static const String baseAssetsIcons = 'assets/images/';
   static const String btcIcon = '${baseAssetsIcons}btc.png';

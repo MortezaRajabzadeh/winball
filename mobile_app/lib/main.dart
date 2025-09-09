@@ -5,8 +5,9 @@ import 'package:winball/bloc/app_bloc/app_bloc.dart';
 import 'package:winball/bloc/authentication_bloc/authentication_bloc.dart';
 import 'package:winball/configs/configs.dart';
 import 'package:database_repository_functions/database_repository_functions.dart';
-import 'package:telegram_web_app/telegram_web_app.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+// ایمپورت‌های زیر موقتا کامنت شده‌اند (برای زمان تست روی دسکتاپ)
+// import 'package:telegram_web_app/telegram_web_app.dart';
+// import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:qr_flutter/qr_flutter.dart';
 
 // لینک پیش‌فرض برای QR کد
@@ -30,6 +31,11 @@ void main() async {
 }
 
 bool isDesktopPlatform() {
+  // موقتا برای تست دسکتاپ غیرفعال شده است
+  // برای فعال‌سازی مجدد محدودیت، کد زیر را از حالت کامنت خارج کنید
+  return false; // همیشه false برمی‌گرداند، بنابراین دسترسی دسکتاپ مجاز است
+  
+  /* 
   if (!kIsWeb) return false;
 
   try {
@@ -44,6 +50,7 @@ bool isDesktopPlatform() {
   } catch (e) {
     return false;
   }
+  */
 }
 
 String getFormattedUrl() {

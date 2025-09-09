@@ -1,4 +1,0 @@
-dependencies:
-  flutter:
-    sdk: flutter
-  cached_network_image: ^3.3.0 

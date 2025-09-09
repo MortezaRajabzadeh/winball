@@ -67,16 +67,7 @@ func GetWithdrawById(withdrawId int, db *sql.DB) (models.WithdrawModel, error) {
 	}
 	return models.WithdrawModel{}, err
 }
-
-func normalizeWithdrawStatus(status string) string {
-	if status == "faild" {
-		return "failed"
-	}
-	return status
-}
-
 func GetWithdrawsByStatusAndPage(status string, page int, db *sql.DB) ([]models.WithdrawModel, error) {
-	status = normalizeWithdrawStatus(status)
 	query := "SELECT * FROM withdraws WHERE status=? ORDER BY created_at DESC LIMIT ? OFFSET ?"
 	return getWithdrawsWithConditions(query, db, status, utils.ITEM_PER_PAGE, (page-1)*utils.ITEM_PER_PAGE)
 }

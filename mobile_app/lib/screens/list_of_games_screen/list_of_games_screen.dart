@@ -17,12 +17,10 @@ class ListOfGamesScreen extends StatelessWidget {
         return AppConfigs.fiveMinGameImage;
       case GameType.red_black_30s:
         return AppConfigs.redBlack30sImage;
-      case GameType.red_black_1min:
-        return AppConfigs.redBlack1MinImage;
-      case GameType.red_black_3min:
-        return AppConfigs.redBlack3MinImage;
-      default:
-        return AppConfigs.oneMinGameImage;
+      case GameType.red_black_3m:
+        return AppConfigs.redBlack3mImage;
+      case GameType.red_black_5m:
+        return AppConfigs.redBlack5mImage;
     }
   }
 

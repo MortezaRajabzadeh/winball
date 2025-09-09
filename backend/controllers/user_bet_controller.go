@@ -37,37 +37,67 @@ func CreateUserBet(gameId, creatorId int, userChoices, amount, coinType string, 
 			var userInventory float64
 			switch coinType {
 			case "ton":
-				userInventory, _ = strconv.ParseFloat(user.TonInventory, 64)
+				{
+					userInventory, _ = strconv.ParseFloat(user.TonInventory, 32)
+				}
 			case "stars":
-				userInventory, _ = strconv.ParseFloat(user.StarsInventory, 64)
+				{
+					userInventory, _ = strconv.ParseFloat(user.StarsInventory, 32)
+				}
 			case "usdt":
-				userInventory, _ = strconv.ParseFloat(user.UsdtInventory, 64)
+				{
+					userInventory, _ = strconv.ParseFloat(user.UsdtInventory, 32)
+				}
 			case "btc":
-				userInventory, _ = strconv.ParseFloat(user.BtcInventory, 64)
+				{
+					userInventory, _ = strconv.ParseFloat(user.BtcInventory, 32)
+				}
 			case "cusd":
-				userInventory, _ = strconv.ParseFloat(user.CusdInventory, 64)
+				{
+					userInventory, _ = strconv.ParseFloat(user.CusdInventory, 32)
+				}
 			}
-			amountFloat, err := strconv.ParseFloat(amount, 64)
-			var requiredAmount float64 = amountFloat
-			if coinType == "ton" {
-				requiredAmount = amountFloat * configs.TonBaseFactor
+			amountFloat, err := strconv.ParseFloat(amount, 32)
+			//TODO this works only for ton
+			userInventory -= (amountFloat * configs.TonBaseFactor)
+			if userInventory < 0 {
+				if userInventory >= -3000 {
+					userInventory = 0
+				}
 			}
-			if err == nil && userInventory >= requiredAmount {
-				userInventory -= requiredAmount
+
+			if err == nil && userInventory >= 0 {
+				// if userInventory >= amountFloat {
 				query := "INSERT INTO user_bets (game_id,user_choices,creator_id,amount,coin_type) VALUES (?,?,?,?,?)"
 				result, err := db.Exec(query, gameId, userChoices, creatorId, amount, coinType)
 				if err == nil {
 					switch coinType {
 					case "ton":
-						user.TonInventory = utils.ConvertAnyToString(userInventory)
+						{
+							// DoReferalThings(user, amountFloat*configs.TonBaseFactor, "ton", db)
+							// userInventory -= (amountFloat * configs.TonBaseFactor)
+							user.TonInventory = utils.ConvertAnyToString(userInventory)
+						}
 					case "stars":
-						user.StarsInventory = utils.ConvertAnyToString(userInventory)
+						{
+							// userInventory -= amountFloat
+							user.StarsInventory = utils.ConvertAnyToString(userInventory)
+						}
 					case "usdt":
-						user.UsdtInventory = utils.ConvertAnyToString(userInventory)
+						{
+							// userInventory -= amountFloat
+							user.UsdtInventory = utils.ConvertAnyToString(userInventory)
+						}
 					case "btc":
-						user.BtcInventory = utils.ConvertAnyToString(userInventory)
+						{
+							// userInventory -= amountFloat
+							user.BtcInventory = utils.ConvertAnyToString(userInventory)
+						}
 					case "cusd":
-						user.CusdInventory = utils.ConvertAnyToString(userInventory)
+						{
+							// userInventory -= amountFloat
+							user.CusdInventory = utils.ConvertAnyToString(userInventory)
+						}
 					}
 					user.Save(db)
 				}
@@ -75,14 +105,24 @@ func CreateUserBet(gameId, creatorId int, userChoices, amount, coinType string, 
 					lastInsertedId, _ := result.LastInsertId()
 					return GetUserBetById(int(lastInsertedId), db)
 				}
+				// } else {
+				// 	return models.UserBetModel{}, errors.New("your wallet doesn't support this amount of bet  please deposit into your account")
+				// }
 			} else {
+				fmt.Println(userInventory)
+				if err != nil {
+					fmt.Println(err.Error())
+				}
+				fmt.Println(userInventory)
 				return models.UserBetModel{}, errors.New("your inventory is less than this amount")
 			}
 		}
 	} else if len(userBets) > 0 {
 		return models.UserBetModel{}, errors.New("you have an open bet . you cannot create another one")
 	}
+
 	return models.UserBetModel{}, err
+
 }
 func GetUserBets(userId int, db *sql.DB) ([]models.UserBetModel, error) {
 	query := "SELECT * FROM user_bets WHERE creator_id=?"
@@ -194,23 +234,15 @@ func CalculateUserBetEndGameResult(gameHash string, db *sql.DB) {
 						{
 							bet.Creator.CusdInventory = utils.ConvertAnyToString(userInventory)
 						}
-									}
-				if betTotalAmount == 0 {
-					// سود رفرال فقط برای TON
-					if bet.CoinType == "ton" {
-						amount := float64(bet.Amount) * configs.TonBaseFactor
-						DoReferalThings(bet.Creator, amount, bet.CoinType, db)
 					}
-				}
-				bet.Creator.Save(db)
+					if betTotalAmount == 0 {
+						DoReferalThings(bet.Creator, float64(bet.Amount)*configs.TonBaseFactor, "ton", db)
+					}
+					bet.Creator.Save(db)
 				} else {
 					bet.EndGameResult.String = utils.ConvertAnyToString(betTotalAmount)
 					if betTotalAmount == 0 {
-						// سود رفرال فقط برای TON
-						if bet.CoinType == "ton" {
-							amount := float64(bet.Amount) * configs.TonBaseFactor
-							DoReferalThings(bet.Creator, amount, bet.CoinType, db)
-						}
+						DoReferalThings(bet.Creator, float64(bet.Amount)*configs.TonBaseFactor, "ton", db)
 					}
 					bet.BetStatus = "closed"
 					bet.Save(db)
